@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://moisessunza.github.io/E-commerce-accesible/">
+    <title>Espada Bastarda - Aura Store</title>
+</head>
+
+<body>
+    <header role="banner">
+        <a href="/index.html" aria-label="Ir a la página principal de Aura Store">
+            <img width="200" src="/Assets/logoAuraStore.png" alt="Dirigirse a la página principal de Aura Store">
+        </a>
+    </header>
+
+    <nav role="navigation" aria-label="Navegación principal">
+        <ul role="list">
+            <li role="listitem"><a href="/Productos/Espadas/index.html">Espadas</a></li>
+            <li role="listitem"><a href="/Productos/Armaduras/index.html">Armaduras</a></li>
+            <li role="listitem"><a href="/Productos/Escudos/index.html">Escudos</a></li>
+        </ul>
+    </nav>
+
+    <main role="main">
+        <h1>Espada Bastarda</h1>
+
+        <section role="region" aria-labelledby="galeria-titulo">
+            <h2 id="galeria-titulo">Galería de imágenes</h2>
+            <img src="/Assets/espada3.jpg" alt="Espada Bastarda" width="300">
+        </section>
+
+        <section role="region" aria-labelledby="precio-titulo">
+            <h2 id="precio-titulo">Precio</h2>
+            <p>$1800 MX</p>
+            <a href="/formCompra.html" aria-label="Comprar Espada Bastarda">
+                <button type="button">Comprar Ahora</button>
+            </a>
+        </section>
+
+        <section role="region" aria-labelledby="descripcion-titulo">
+            <h2 id="descripcion-titulo">Descripción</h2>
+            <p>Conocida también como "mano y media", esta espada se caracterizaba por su versatilidad. Su empuñadura
+                alargada permitía usarla con una mano o con ambas, dependiendo de la situación. La hoja, recta y afilada por
+                ambos lados, podía atravesar armaduras ligeras y ejecutar tajos profundos. Era muy apreciada por mercenarios
+                y guerreros experimentados.</p>
+        </section>
+
+        <section role="region" aria-labelledby="caracteristicas-titulo">
+            <h2 id="caracteristicas-titulo">Características técnicas</h2>
+            <ul role="list" aria-label="Lista de características técnicas">
+                <li role="listitem">Tamaño: 1 metro</li>
+                <li role="listitem">Material: Acero Inoxidable</li>
+                <li role="listitem">Color: Plateado</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <a href="/Productos/Espadas/index.html" aria-label="Ver productos similares: espadas">
+            <h2>Productos similares</h2>
+            <img width="200" src="/Assets/catEspadas.png" alt="Ir al catálogo de espadas">
+        </a>
+
+        <br>
+
+        <a href="/index.html" aria-label="Volver al catálogo principal">
+            <h2>Más productos</h2>
+            <img width="200" src="/Assets/logoAuraStore.png" alt="Ir al catálogo principal">
+        </a>
+    </footer>
+</body>
+
+</html>

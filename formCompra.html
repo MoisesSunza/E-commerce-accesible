@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://moisessunza.github.io/E-commerce-accesible/">
+    <title>Formulario de Compra</title>
+</head>
+
+<body>
+    <header role="banner">
+        <a href="/index.html">
+            <img width="200" src="/Assets/logoAuraStore.png" alt="Ir a la página principal de Aura Store">
+        </a>
+    </header>
+
+    <main role="main">
+        <h1>Pagina de Compra</h1>
+
+        <form role="form" aria-labelledby="formulario de compra" action="/confirmacion.html">
+
+            <fieldset role="group" aria-labelledby="Datos de envio">
+                <legend id="Datos de envio">Datos de envío</legend>
+
+                <label for="nombre">Nombre</label> <br>
+                <input name="nom" type="text" id="nombre" required aria-required="true">
+
+                <br>
+
+                <label for="apellido">Apellido</label> <br>
+                <input name="ap" type="text" id="apellido" required aria-required="true">
+
+                <br>
+
+                <label for="num">Número Telefónico</label> <br>
+                <input name="num" type="tel" pattern="[0-9]{10}" required id="num"
+                    aria-required="true">
+
+                <br>
+
+                <label for="dirtar">Dirección</label> <br>
+                <input name="dirtar" type="text" id="dirtar" required aria-required="true">
+
+                <br>
+
+                <fieldset role="radiogroup" aria-labelledby="Opciones de envio">
+                    <legend id="envio-opciones-title">Opción de envío</legend>
+                    <input type="radio" id="envio1" name="tipoEnvio" value="estandar">
+                    <label for="envio1">Estandar</label>
+
+                    <input type="radio" id="envio2" name="tipoEnvio" value="express">
+                    <label for="envio2">Express</label>
+                </fieldset>
+
+                <br>
+
+                <label for="notes">Notas</label> <br>
+                <input name="notes" type="text" id="notes" aria-describedby="notas">
+                <small id="notas">Opcional: puede agregar instrucciones adicionales para la entrega.</small>
+            </fieldset>
+
+            <fieldset role="group" aria-labelledby="Datos de pago">
+                <legend id="Datos de pago">Datos del Pago</legend>
+
+                <label for="nombret">Nombre del titular</label> <br>
+                <input name="nomt" type="text" id="nombret" required aria-required="true">
+
+                <br>
+
+                <label for="numTarjeta">Número de tarjeta</label> <br>
+                <input name="numTarjeta" type="text" required id="numTarjeta"
+                    aria-required="true" inputmode="numeric">
+
+                <br>
+
+                <label for="fecha">Fecha de Vencimiento</label> <br>
+                <input name="fecha" type="month" id="fecha" aria-required="true">
+
+                <br>
+
+                <label for="cvv">CVV</label> <br>
+                <input name="cvv" type="text" id="cvv" aria-required="true" maxlength="3" inputmode="numeric">
+
+                <br>
+
+            </fieldset>
+
+            <button type="submit" role="button" aria-label="Realizar compra">
+                Realizar compra
+            </button>
+
+        </form>
+    </main>
+
+</body>
+
+</html>

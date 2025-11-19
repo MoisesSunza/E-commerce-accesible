@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://moisessunza.github.io/E-commerce-accesible/">
+    <title>Confirmación de Compra - Aura Store</title>
+</head>
+
+<body>
+    <header role="banner">
+        <a href="/index.html" aria-label="Ir a la página principal de Aura Store">
+            <img width="200" src="/Assets/logoAuraStore.png" alt="Dirigirse a la página principal de Aura Store">
+        </a>
+    </header>
+
+    <main role="main" id="contenido-principal">
+        <h1>¡Compra realizada con éxito!</h1>
+        <p role="status" aria-live="polite">
+            Gracias por tu compra. Tu pedido ha sido procesado correctamente y será enviado a la dirección proporcionada.
+        </p>
+
+        <!-- Resumen del pedido -->
+        <div role="region" aria-labelledby="resumen-titulo">
+            <h2 id="resumen-titulo">Resumen de tu pedido</h2>
+            <ul role="list" aria-label="Detalles del pedido">
+                <li role="listitem">Producto: Nombre del producto</li>
+                <li role="listitem">Cantidad: 1</li>
+                <li role="listitem">Precio total: $XXX</li>
+            </ul>
+        </div>
+
+        <!-- Botones de navegación -->
+        <div role="navigation" aria-label="Enlaces de navegación tras la compra">
+            <a href="/index.html" aria-label="Volver al catálogo principal">
+                <button type="button">Ir al catálogo principal</button>
+            </a>
+            <a href="/Productos/Espadas/" aria-label="Ver catálogo de Espadas">
+                <button type="button">Ver catálogo de Espadas</button>
+            </a>
+            <a href="/Productos/Armaduras/" aria-label="Ver catálogo de Armaduras">
+                <button type="button">Ver catálogo de Armaduras</button>
+            </a>
+            <a href="/Productos/Escudos/" aria-label="Ver catálogo de Escudos">
+                <button type="button">Ver catálogo de Escudos</button>
+            </a>
+        </div>
+    </main>
+</body>
+
+</html>

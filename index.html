@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://moisessunza.github.io/E-commerce-accesible/">
+    <title>Aura Store</title>
+</head>
+
+<body>
+    <header role="banner">
+        <a href="/index.html" aria-label="Ir a la página principal de Aura Store">
+            <img width="200" src="/Assets/logoAuraStore.png" alt="Ir a la página principal de Aura Store">
+        </a>
+    </header>
+
+    <nav role="navigation" aria-label="Navegación principal">
+        <ul role="list">
+            <li role="listitem">
+                <a href="/Productos/Espadas/index.html">Espadas</a>
+            </li>
+
+            <li role="listitem">
+                <a href="/Productos/Armaduras/index.html">Armaduras</a>
+            </li>
+
+            <li role="listitem">
+                <a href="/Productos/Escudos/index.html">Escudos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main role="main" id="contenido-principal">
+        <h1 id="titulo-catalogo">Catálogo De Productos</h1><br>
+
+        <ul role="list" aria-labelledby="titulo-catalogo">
+            <li role="listitem">
+                <a href="/Productos/Espadas/espada1.html" aria-labelledby="prod-espada1-titulo" aria-describedby="prod-espada1-img">
+                    <h2 id="prod-espada1-titulo">Espada larga de caballero</h2>
+                    <img id="prod-espada1-img" width="300" src="/Assets/espada1.jpg" alt="Espada Larga de Caballero"><br>
+                </a>
+                <a href="/formCompra.html" aria-label="Comprar ahora: Espada larga de caballero">
+                    <button type="button">Comprar Ahora</button>
+                </a>
+            </li>
+
+            <li role="listitem">
+                <a href="/Productos/Armaduras/armadura1.html" aria-labelledby="prod-armadura1-titulo" aria-describedby="prod-armadura1-img">
+                    <h2 id="prod-armadura1-titulo">Armadura Samurai Ō-yoroi</h2>
+                    <img id="prod-armadura1-img" width="300" src="/Assets/Armadura_samurai.PNG" alt="Armadura Samurai Ō-yoroi"><br>
+                </a>
+                <a href="/formCompra.html" aria-label="Comprar ahora: Armadura Samurai Ō-yoroi">
+                    <button type="button">Comprar Ahora</button>
+                </a>
+            </li>
+
+            <li role="listitem">
+                <a href="/Productos/Escudos/escudo1.html" aria-labelledby="prod-escudo1-titulo" aria-describedby="prod-escudo1-img">
+                    <h2 id="prod-escudo1-titulo">Escudo Redondo Vikingo</h2>
+                    <img id="prod-escudo1-img" width="300" src="/Assets/Escudo_vikingo_redondo.PNG" alt="Escudo Redondo Vikingo"><br>
+                </a>
+                <a href="/formCompra.html" aria-label="Comprar ahora: Escudo Redondo Vikingo">
+                    <button type="button">Comprar Ahora</button>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <aside role="complementary" aria-labelledby="heading-categorias">
+        <h2 id="heading-categorias">Categorías</h2>
+        <ul role="list" aria-label="Accesos directos a categorías">
+            <li role="listitem">
+                <a href="/Productos/Espadas/index.html" aria-label="Ir al catálogo de espadas">
+                    <img width="200" src="/Assets/catEspadas.png" alt="Ir al catálogo de espadas">
+                </a>
+            </li>
+
+            <li role="listitem">
+                <a href="/Productos/Armaduras/index.html" aria-label="Ir al catálogo de armaduras">
+                    <img width="200" src="/Assets/catArmad.png" alt="Ir al catálogo de armaduras">
+                </a>
+            </li>
+
+            <li role="listitem">
+                <a href="/Productos/Escudos/index.html" aria-label="Ir al catálogo de escudos">
+                    <img width="200" src="/Assets/catEscudos.png" alt="Ir al catálogo de escudos">
+                </a>
+            </li>
+        </ul>
+    </aside>
+</body>
+
+</html>

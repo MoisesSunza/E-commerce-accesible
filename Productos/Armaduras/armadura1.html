@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://moisessunza.github.io/E-commerce-accesible/">
+    <title>Armadura Samurai Ō-yoroi - Aura Store</title>
+</head>
+
+<body>
+    <header role="banner">
+        <a href="/index.html" aria-label="Ir a la página principal de Aura Store">
+            <img width="200" src="/Assets/logoAuraStore.png" alt="Dirigirse a la página principal de Aura Store">
+        </a>
+    </header>
+
+    <nav role="navigation" aria-label="Navegación principal">
+        <ul role="list">
+            <li role="listitem"><a href="/Productos/Espadas/index.html">Espadas</a></li>
+            <li role="listitem"><a href="/Productos/Armaduras/index.html" aria-current="page">Armaduras</a></li>
+            <li role="listitem"><a href="/Productos/Escudos/index.html">Escudos</a></li>
+        </ul>
+    </nav>
+
+    <main role="main">
+        <h1>Armadura Samurai (Ō-yoroi)</h1>
+
+        <section role="region" aria-labelledby="galeria-titulo">
+            <h2 id="galeria-titulo">Galería de imágenes</h2>
+            <img src="/Assets/Armadura_samurai.PNG" alt="Armadura Samurai Ō-yoroi" width="300">
+        </section>
+
+        <section role="region" aria-labelledby="precio-titulo">
+            <h2 id="precio-titulo">Precio</h2>
+            <p>$450 MX</p>
+            <a href="/formCompra.html" aria-label="Comprar Armadura Samurai Ō-yoroi">
+                <button type="button">Comprar Ahora</button>
+            </a>
+        </section>
+
+        <section role="region" aria-labelledby="descripcion-titulo">
+            <h2 id="descripcion-titulo">Descripción</h2>
+            <p>Conocida como “Ō-yoroi”, esta armadura tradicional japonesa...</p>
+        </section>
+
+        <section role="region" aria-labelledby="caracteristicas-titulo">
+            <h2 id="caracteristicas-titulo">Características técnicas</h2>
+            <ul role="list">
+                <li role="listitem">Material: Hierro lacado y seda</li>
+                <li role="listitem">Peso: 20 kg</li>
+                <li role="listitem">Movilidad: Alta</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <a href="/Productos/Armaduras/index.html" aria-label="Ver productos similares: armaduras">
+            <h2>Productos similares</h2>
+            <img width="200" src="/Assets/catArmad.png" alt="Ir al catálogo de armaduras">
+        </a>
+        <br>
+        <a href="/index.html" aria-label="Volver al catálogo principal">
+            <h2>Más productos</h2>
+            <img width="200" src="/Assets/logoAuraStore.png" alt="Ir al catálogo principal">
+        </a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://moisessunza.github.io/E-commerce-accesible/">
+    <title>Aura Espadas</title>
+</head>
+
+<body>
+    <header role="banner">
+        <a href="/index.html" aria-label="Ir a la página principal de Aura Store">
+            <img width="200" src="/Assets/logoAuraStore.png" alt="Dirigirse a la página principal de Aura Store">
+        </a>
+    </header>
+
+    <nav role="navigation" aria-label="Navegación principal">
+        <ul role="list">
+            <li role="listitem"><a href="/Productos/Espadas/index.html" aria-current="page">Espadas</a></li>
+            <li role="listitem"><a href="/Productos/Armaduras/index.html">Armaduras</a></li>
+            <li role="listitem"><a href="/Productos/Escudos/index.html">Escudos</a></li>
+        </ul>
+    </nav>
+
+    <main role="main">
+        <a href="/index.html" aria-label="Ir al catálogo principal">
+            <button type="button">Ir al catálogo principal</button>
+        </a>
+
+        <h1 id="titulo-catalogo">Catálogo De Espadas</h1><br>
+
+        <ul role="list" aria-labelledby="titulo-catalogo">
+            <li role="listitem">
+                <a href="/Productos/Espadas/espada1.html" aria-labelledby="espada1-titulo">
+                    <h2 id="espada1-titulo">Espada larga de caballero</h2>
+                    <img id="espada1" width="300" src="/Assets/espada1.jpg" alt="Espada Larga de Caballero"><br>
+                </a>
+                <a href="/formCompra.html" aria-label="Comprar Espada Larga de Caballero">
+                    <button type="button">Comprar Ahora</button>
+                </a>
+            </li>
+
+            <li role="listitem">
+                <a href="/Productos/Espadas/espada2.html" aria-labelledby="espada2-titulo">
+                    <h2 id="espada2-titulo">Espada Falchion</h2>
+                    <img id="espada2" width="300" src="/Assets/espadafalachon.jpg" alt="Espada Falchion"><br>
+                </a>
+                <a href="/formCompra.html" aria-label="Comprar Espada Falchion">
+                    <button type="button">Comprar Ahora</button>
+                </a>
+            </li>
+
+            <li role="listitem">
+                <a href="/Productos/Espadas/espada3.html" aria-labelledby="espada3-titulo">
+                    <h2 id="espada3-titulo">Espada Bastarda</h2>
+                    <img id="espada3" width="300" src="/Assets/espada3.jpg" alt="Espada Bastarda"><br>
+                </a>
+                <a href="/formCompra.html" aria-label="Comprar Espada Bastarda">
+                    <button type="button">Comprar Ahora</button>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <aside role="complementary" aria-labelledby="mas-productos-titulo">
+        <a href="/index.html" aria-label="Ir al catálogo principal">
+            <h2 id="mas-productos-titulo">Más Productos</h2>
+            <img width="400" src="/Assets/logoAuraStore.png" alt="Ir al catálogo principal">
+        </a>
+    </aside>
+</body>
+</html>

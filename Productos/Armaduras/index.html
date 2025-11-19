@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://moisessunza.github.io/E-commerce-accesible/">
+    <title>Aura Armaduras</title>
+</head>
+
+<body>
+    <header role="banner">
+        <a href="/index.html" aria-label="Ir a la página principal de Aura Store">
+            <img width="200" src="/Assets/logoAuraStore.png" alt="Dirigirse a la página principal de Aura Store">
+        </a>
+    </header>
+
+    <nav role="navigation" aria-label="Navegación principal">
+        <ul role="list">
+            <li role="listitem"><a href="/Productos/Espadas/index.html">Espadas</a></li>
+            <li role="listitem"><a href="/Productos/Armaduras/index.html" aria-current="page">Armaduras</a></li>
+            <li role="listitem"><a href="/Productos/Escudos/index.html">Escudos</a></li>
+        </ul>
+    </nav>
+
+    <main role="main">
+        <a href="/index.html" aria-label="Ir al catálogo principal">
+            <button type="button">Ir al catálogo principal</button>
+        </a>
+
+        <h1 id="titulo-catalogo">Catálogo De Armaduras</h1><br>
+
+        <ul role="list" aria-labelledby="titulo-catalogo">
+            <li role="listitem">
+                <a href="/Productos/Armaduras/armadura1.html" aria-labelledby="arm1-titulo">
+                    <h2 id="arm1-titulo">Armadura Samurai Ō-yoroi</h2>
+                    <img id="arm1" width="300" src="/Assets/Armadura_samurai.PNG" alt="Armadura Samurai Ō-yoroi"><br>
+                </a>
+                <a href="/formCompra.html" aria-label="Comprar Armadura Samurai Ō-yoroi">
+                    <button type="button">Comprar Ahora</button>
+                </a>
+            </li>
+
+            <li role="listitem">
+                <a href="/Productos/Armaduras/armadura2.html" aria-labelledby="arm2-titulo">
+                    <h2 id="arm2-titulo">Armadura Completa de Placas</h2>
+                    <img id="arm2" width="300" src="/Assets/Armadura_Placas.PNG" alt="Armadura Completa de Placas"><br>
+                </a>
+                <a href="/formCompra.html" aria-label="Comprar Armadura Completa de Placas">
+                    <button type="button">Comprar Ahora</button>
+                </a>
+            </li>
+
+            <li role="listitem">
+                <a href="/Productos/Armaduras/armadura3.html" aria-labelledby="arm3-titulo">
+                    <h2 id="arm3-titulo">Cota de Malla</h2>
+                    <img id="arm3" width="300" src="/Assets/Armadura_malla.PNG" alt="Cota de Malla"><br>
+                </a>
+                <a href="/formCompra.html" aria-label="Comprar Cota de Malla">
+                    <button type="button">Comprar Ahora</button>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <aside role="complementary" aria-labelledby="mas-productos-titulo">
+        <a href="/index.html" aria-label="Ir al catálogo principal">
+            <h2 id="mas-productos-titulo">Más Productos</h2>
+            <img width="400" src="/Assets/logoAuraStore.png" alt="Ir al catálogo principal">
+        </a>
+    </aside>
+</body>
+
+</html>

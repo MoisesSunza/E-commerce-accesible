@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://moisessunza.github.io/E-commerce-accesible/">
+    <title>Aura Escudos</title>
+</head>
+
+<body>
+    <header role="banner">
+        <a href="/index.html" aria-label="Ir a la página principal de Aura Store">
+            <img width="200" src="/Assets/logoAuraStore.png" alt="Dirigirse a la página principal de Aura Store">
+        </a>
+    </header>
+
+    <nav role="navigation" aria-label="Navegación principal">
+        <ul role="list">
+            <li role="listitem"><a href="/Productos/Espadas/index.html">Espadas</a></li>
+            <li role="listitem"><a href="/Productos/Armaduras/index.html">Armaduras</a></li>
+            <li role="listitem"><a href="/Productos/Escudos/index.html" aria-current="page">Escudos</a></li>
+        </ul>
+    </nav>
+
+    <main role="main">
+        <a href="/index.html" aria-label="Ir al catálogo principal">
+            <button type="button">Ir al catálogo principal</button>
+        </a>
+
+        <h1 id="titulo-catalogo">Catálogo De Escudos</h1><br>
+
+        <ul role="list" aria-labelledby="titulo-catalogo">
+            <li role="listitem">
+                <a href="/Productos/Escudos/escudo1.html" aria-labelledby="esc1-titulo">
+                    <h2 id="esc1-titulo">Escudo Redondo Vikingo</h2>
+                    <img id="esc1" width="300" src="/Assets/Escudo_vikingo_redondo.PNG" alt="Escudo Redondo Vikingo"><br>
+                </a>
+                <a href="/formCompra.html" aria-label="Comprar Escudo Redondo Vikingo">
+                    <button type="button">Comprar Ahora</button>
+                </a>
+            </li>
+
+            <li role="listitem">
+                <a href="/Productos/Escudos/escudo2.html" aria-labelledby="esc2-titulo">
+                    <h2 id="esc2-titulo">Escudo de Torre (Pavés)</h2>
+                    <img id="esc2" width="300" src="/Assets/escudo_Torre.PNG" alt="Escudo de Torre Pavés"><br>
+                </a>
+                <a href="/formCompra.html" aria-label="Comprar Escudo de Torre Pavés">
+                    <button type="button">Comprar Ahora</button>
+                </a>
+            </li>
+
+            <li role="listitem">
+                <a href="/Productos/Escudos/escudo3.html" aria-labelledby="esc3-titulo">
+                    <h2 id="esc3-titulo">Escudo Romano Scutum</h2>
+                    <img id="esc3" width="300" src="/Assets/escudo-romano-republica.PNG" alt="Escudo Romano Scutum"><br>
+                </a>
+                <a href="/formCompra.html" aria-label="Comprar Escudo Romano Scutum">
+                    <button type="button">Comprar Ahora</button>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <aside role="complementary" aria-labelledby="mas-productos-titulo">
+        <a href="/index.html" aria-label="Ir al catálogo principal">
+            <h2 id="mas-productos-titulo">Más Productos</h2>
+            <img width="400" src="/Assets/logoAuraStore.png" alt="Ir al catálogo principal">
+        </a>
+    </aside>
+</body>
+
+</html>
